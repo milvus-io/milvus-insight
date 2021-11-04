@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { CollectionsModule } from 'src/collections/collections.module';
-import { EventsModule } from 'src/events/events.module';
+import { CollectionsModule } from '../collections/collections.module';
+import { EventsModule } from '../events/events.module';
 import { CronsService } from './crons.service';
 import { CronsController } from './crons.controller';
 

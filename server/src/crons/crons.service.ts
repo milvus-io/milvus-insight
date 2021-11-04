@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { EventsGateway } from '../events/events.gateway';
 import { Cron, CronExpression, SchedulerRegistry } from '@nestjs/schedule';
 import { CollectionsService } from '../collections/collections.service';
-import { WS_EVENTS, WS_EVENTS_TYPE } from 'src/utils/Const';
+import { WS_EVENTS, WS_EVENTS_TYPE } from '../utils/Const';
 @Injectable()
 export class CronsService {
   constructor(
