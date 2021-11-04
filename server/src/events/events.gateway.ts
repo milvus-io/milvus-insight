@@ -8,7 +8,7 @@ import {
 import { from, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Server } from 'socket.io';
-import { WS_EVENTS } from 'src/utils/Const';
+import { WS_EVENTS } from '../utils/Const';
 
 @WebSocketGateway({
   cors: {

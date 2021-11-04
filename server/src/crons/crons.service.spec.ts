@@ -1,4 +1,7 @@
+import { ScheduleModule } from '@nestjs/schedule';
 import { Test, TestingModule } from '@nestjs/testing';
+import { CollectionsModule } from '../collections/collections.module';
+import { EventsModule } from '../events/events.module';
 import { CronsService } from './crons.service';
 
 describe('CronsService', () => {
@@ -6,6 +9,7 @@ describe('CronsService', () => {
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
+      imports: [EventsModule, CollectionsModule, ScheduleModule.forRoot()],
       providers: [CronsService],
     }).compile();
 
