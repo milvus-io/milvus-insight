@@ -18,7 +18,7 @@ jobs:
 
       - name: Run server tests
         run: |
-          cd server
+          cd express
           yarn install
           yarn test:cov
       
