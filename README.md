@@ -1,3 +1,9 @@
+# Notice: Unmaintained
+This repo is no longer maintained.
+
+However we have the [Attu](https://github.com/zilliztech/attu) to help manage Milvus.
+
+
 # Milvus insight
 
 [![typescript](https://badges.aleen42.com/src/typescript.svg)](https://badges.aleen42.com/src/typescript.svg)
