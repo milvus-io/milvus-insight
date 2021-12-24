@@ -15,11 +15,11 @@ export const ReqHeaderMiddleware = (
   // server will set activeaddress in milvus service.
   const milvusAddress = (req.headers[MILVUS_ADDRESS] as string) || '';
 
-   /**
-   *  only api request has MILVUS_ADDRESS.
-   *  When client run in express, we dont need static files like: xx.js run this logic.
-   *  Otherwise will cause 401 error.
-   * */
+   
+   // only api request has MILVUS_ADDRESS.
+   // When client run in express, we dont need static files like: xx.js run this logic.
+   // Otherwise will cause 401 error.
+   
   if (milvusAddress && insightCache.has(milvusAddress)) {
     MilvusService.activeAddress = milvusAddress;
     // insight cache will update expire time when use insightCache.get
